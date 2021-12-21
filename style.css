@@ -1,273 +1,305 @@
 *{
-  box-sizing: border-box;
-}
-body{
-    background-color: white;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: #f7f7f7;
+      font-family: Gotham;
+      line-height: 1em;
+  }
+  
+  p{
+      font-weight: 300;
+  }
+  
+  main{
+  
+      margin: auto;
+      max-width: 1000px;
+  
+  }
+  .name{
+      background-color: #f7f7f7;
+      display: flex;
+      align-items: center;
+  }
+  
+  .name img{
+      height: auto; 
+      width: auto; 
+      max-width: 100px;
+      border-radius: 50px; 
+  }
+  
+  .name-image{
+      margin: 2vw;
+  
+  }
+  
+  .name-text{
+      margin: 1.5vw;
+  }
+  
+  
+  
+  
+  
+  
+  /* START SECTION PERSONAL INFO*/
+  .personal-info{
+      background-color: #f7f7f7;
+  }
+  
+  .personal-info .wrapper{
+      background-color: white;
+      border: 1.5px solid #eae7e7;
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+  
+  }
+  
+  
+  .block_2 img{
+      height: auto; 
+      width: auto; 
+      max-width: 80px;
+  }
+  
+  .block_1{
+      width: 60%;
+      display: flex;
+      border-right: 1.5px solid #eae7e7;
+  
+  }
+  
+  
+  
+  .name-email{
+      width: 50%;
+  }
+  
+  .date-phone{
+      width: 50%;
+  }
+  
+  
+  .block_2{
+      width: 40%;
+      display: flex;
+      padding-left: 50px;
+  }
+  
+  .car{
+      width: 50%;
+  }
+  
+  .city{
+      width: 50%;
+  }
+  
+  
+  /* ENDS SECTION PERSONAL INFO*/
+  
+  
+  /* START SECTION PERSONAL ACHIEVEMENTS*/
+  
+  .achievements{
+      margin-top: 5vh;
+  }
+  .achievements .wrapper{
+         display: flex;
+         
+  }
+  
+  .block-1, .block-2{
+      padding: 10px 10px 10px 20px;
+      border: 1.5px solid #eae7e7;
+      border-radius: 5px;
+      width: 30%;
+      background-color: white;
+  }
+  
+  .achievements .block-2{
+     
+    margin-left: 10px;
+  }
+  
+  
+  .achievements img{
+      height: auto; 
+      width: auto; 
+      max-width: 50px;
+      margin-right: 20px;
+  }
+  
+  .icons{
+      display: flex;
+      align-items: center;
+  }
+
+  
+  
+  /* ENDS SECTION ACHIEVEMENTS*/
+  
+  /* STARTS SECTION HIGHLIGHTS*/
+  
+  .highlights{
+      margin-top: 5vh;
+  }
+  .highlights .wrapper{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+  }
+  
+  .highlights img{
+      height: auto; 
+      width: auto; 
+      max-width: 50px;
+      margin-right: 20px;
+  }
+  
+  .block-3{
+      padding: 10px 10px 10px 20px;
+      border: 1.5px solid #eae7e7;
+      border-radius: 5px;
+      width: 30%;
+  }
+  /* ENDS SECTION HIGHLIGHTS*/
+  
+  .log-out{
+      text-align: center;
+      margin: 20px;
+      
+  }
+
+  .log-out button{
+    color: #00a082;
+    background-color: #f1f1f1;;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
     font-family: Gotham;
-    line-height: 1em;
+    box-shadow: 1px 1px 2px lightgrey;
+
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+      h1{
+          font-size: 16px;
+      }
+      h2{
+          font-size: 15px;
+      }
+      h3{
+          font-size: 14px;
+      }
+  
+      p{
+          font-size: 14px;
+      }
+  
+      main{
+          width: 100%;
+      }
+      .name img{
+          height: auto; 
+          width: auto; 
+          max-width: 70px; 
+      }
+  
+  
+  /* START SECTION PERSONAL INFO*/
+  
+      .personal-info .wrapper{
+          display: block;
+      }
+      .block_1{
+          display: block;
+          width: 100%;
+          border: 1.5px solid #eae7e7;
+          margin: 0;
+          padding-left: 10px;
+          border-radius: 5px;
+          background-color: white;
+      }
+  
+      .personal-info .wrapper{
+          all: revert;
+      }
+  
+      .block_2{
+          width: 100%;
+          padding-left: 0;
+          
+      }
+  
+      .city{
+          margin: 5px 0px 5px 5px;
+          padding: 5px;
+          border: 1.5px solid #eae7e7;
+          border-radius: 5px;
+          background-color: white;
+      }
+  
+      .car{
+          margin: 5px 5px 5px 0px;
+          padding: 5px;
+          border: 1.5px solid #eae7e7;
+          border-radius: 5px;
+          background-color: white;
+      }
+  
+      .block_2 img{
+          float: left;
+          width: 60px;
+          margin-right: 10px;
+      }
+  
+  
+      .block-1, .block-2, .block-3{
+          width: 49%;
+          display: flex;
+          flex-direction: column;
+          height: 90px;
+          padding: 5px;
+          margin-top: 8px;
+          background-color: white;
+      }
+      .block-1 h3, .block-2 h3{
+          order: 2;
+          line-height: 2px;
+      }
+  
+      .icons{
+          order: 1;
+      }
+  
+      .icons h2{
+          font-size: 17px;
+      }
+  
+      .block-1 img, .block-2 img{
+          max-width: 40px;
+      }
+  
+      .achievements .wrapper{
+      justify-content: space-between;
+      }
+  }
+
+.chart-image{
+    display: flex; 
+    justify-content: center; 
+    padding: 30px; 
 }
 
-p{
-    font-weight: 300;
-}
-
-main{
-
-    margin: auto;
-    width: 70%;
-
-}
-.name{
-    background-color: white;
-    display: flex;
-    align-items: center;
-}
-
-.name img{
-    height: auto; 
-    width: auto; 
-    max-width: 100px;
-    border-radius: 50px; 
-}
-
-.name-image{
-    margin: 2vw;
-
-}
-
-.name-text{
-    margin: 1.5vw;
-}
-
-
-
-
-
-
-/* START SECTION PERSONAL INFO*/
-.personal-info{
-    background-color: white;
-}
-
-.personal-info .wrapper{
-    background-color: white;
+.container-chart{
+    margin-top: 20px; 
+    margin-bottom: 20px; 
     border: 1.5px solid #eae7e7;
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-
-}
-
-
-.block_2 img{
-    height: auto; 
-    width: auto; 
-    max-width: 80px;
-}
-
-.block_1{
-    width: 60%;
-    display: flex;
-    border-right: 1.5px solid #eae7e7;
-
-}
-
-
-
-.name-email{
-    width: 50%;
-}
-
-.date-phone{
-    width: 50%;
-}
-
-
-.block_2{
-    width: 40%;
-    display: flex;
-    padding-left: 50px;
-}
-
-.car{
-    width: 50%;
-}
-
-.city{
-    width: 50%;
-}
-
-
-/* ENDS SECTION PERSONAL INFO*/
-
-
-/* START SECTION PERSONAL ACHIEVEMENTS*/
-
-.achievements{
-    margin-top: 5vh;
-}
-.achievements .wrapper{
-       display: flex;
-       
-}
-
-.block-1, .block-2{
-    padding: 10px 10px 10px 20px;
-    border: 1.5px solid #eae7e7;
-    border-radius: 5px;
-    width: 30%;
-}
-
-.block-1{
-    
-}
-
-.block-2{
-   
-}
-
-
-.achievements img{
-    height: auto; 
-    width: auto; 
-    max-width: 50px;
-    margin-right: 20px;
-}
-
-.icons{
-    display: flex;
-    align-items: center;
-}
-
-/* ENDS SECTION ACHIEVEMENTS*/
-
-/* STARTS SECTION HIGHLIGHTS*/
-
-.highlights{
-    margin-top: 5vh;
-}
-.highlights .wrapper{
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
-}
-
-.highlights img{
-    height: auto; 
-    width: auto; 
-    max-width: 50px;
-    margin-right: 20px;
-}
-
-.block-3{
-    padding: 10px 10px 10px 20px;
-    border: 1.5px solid #eae7e7;
-    border-radius: 5px;
-    width: 30%;
-}
-/* ENDS SECTION HIGHLIGHTS*/
-
-.log-out{
-    background-color: mediumaquamarine;
-}
-
-
-
-@media only screen and (max-width: 600px) {
-    h1{
-        font-size: 16px;
-    }
-    h2{
-        font-size: 15px;
-    }
-    h3{
-        font-size: 14px;
-    }
-
-    p{
-        font-size: 14px;
-    }
-
-    main{
-        width: 100%;
-    }
-    .name img{
-        height: auto; 
-        width: auto; 
-        max-width: 70px; 
-    }
-
-
-/* START SECTION PERSONAL INFO*/
-
-    .personal-info .wrapper{
-        display: block;
-    }
-    .block_1{
-        display: block;
-        width: 100%;
-        border: 1.5px solid #eae7e7;
-        margin: 0;
-        padding-left: 10px;
-        border-radius: 5px;
-    }
-
-    .personal-info .wrapper{
-        all: revert;
-    }
-
-    .block_2{
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .city{
-        margin: 5px 0px 5px 5px;
-        padding: 5px;
-        border: 1.5px solid #eae7e7;
-        border-radius: 5px;
-    }
-
-    .car{
-        margin: 5px 5px 5px 0px;
-        padding: 5px;
-        border: 1.5px solid #eae7e7;
-        border-radius: 5px;
-    }
-
-    .block_2 img{
-        float: left;
-        width: 60px;
-        margin-right: 10px;
-    }
-
-
-    .block-1, .block-2, .block-3{
-        width: 49%;
-        display: flex;
-        flex-direction: column;
-        height: 90px;
-        padding: 5px;
-        margin-top: 8px;
-    }
-    .block-1 h3, .block-2 h3{
-        order: 2;
-        line-height: 2px;
-    }
-
-    .icons{
-        order: 1;
-    }
-
-    .icons h2{
-        font-size: 20px;
-    }
-
-    .block-1 img, .block-2 img{
-        max-width: 40px;
-    }
-
-    .achievements .wrapper{
-    justify-content: space-between;
-    }
+    border-radius: 5px; 
+    background-color: white;
 }

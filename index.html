@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glovo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link rel="stylesheet" href="style.css">
     
 <body>
@@ -95,7 +96,17 @@
                 <p>Weekly metrics of your collaboration with Glovo</p>
                 
                 <div class="chart"></div>
-                <div class="wrapper">
+                    <div class="container-chart" >
+                        <h3 style="padding-left: 20px;">Avg delivery time</h3>
+                    <div class="chart-image">
+                
+                    <canvas id="myChart" style="width:100%; max-width:70%"></canvas>
+                    </div>
+
+                    </div>
+                    
+                 
+                    <div class="wrapper">
                     <div class="block-1">
                         <h3>% of cancellations</h3>
                         <div class="icons">
@@ -124,14 +135,17 @@
 
                 </div> 
             </section>
+
+          
+            
             <section class="log-out">
-                <h1>Pedro</h1>
+                <button type="button"><b>Log out</b></button> 
             </section>
         </div>
 
 
     </main>
-    <script type="text/javascript" src="java.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="java.js"></script>
+    
 </body>
 </html>

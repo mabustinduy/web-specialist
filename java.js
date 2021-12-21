@@ -20,5 +20,25 @@ document.getElementById("reassigments").innerHTML = obj.reassigmentsPerc + "%" ;
 document.getElementById("speed").innerHTML = obj.avgSpeed + " km/h" ;
 
 
+var xValues = [20, 21, 19, 25, 21, 17, 30];
+var yValues = [20, 21, 19, 25, 21, 17, 30];
 
-
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "yellow",
+      borderColor: "yellow",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:50}}],
+    }
+  }
+});
